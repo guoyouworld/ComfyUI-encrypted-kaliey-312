@@ -1,0 +1,4 @@
+cryptography>=41.0.0
+torch>=1.13.0
+pathlib2>=2.3.0
+safetensors>=0.3.0
