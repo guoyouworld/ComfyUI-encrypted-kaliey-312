@@ -149,7 +149,7 @@ python protect_code.py --source . --output protected_code --level medium
 
 ## 📁 项目结构
 
-```bash
+```
 ComfyUI-encrypted-kaliey/
 ├── __init__.py              # 插件入口
 ├── nodes.py                 # 节点集成文件
@@ -182,6 +182,39 @@ ComfyUI-encrypted-kaliey-*/
 
 # 或者在脚本中使用通配符匹配特定版本
 ComfyUI-encrypted-kaliey-31*     # 匹配310, 311, 312, 313版本
+```
+
+## 🔨 编译项目
+
+### 使用build.bat编译（推荐）
+
+```bash
+# Windows
+.\build.bat
+```
+
+### 使用特定Conda环境编译
+
+如果您有预定义的Conda环境，可以使用以下脚本：
+
+```bash
+# Windows
+.\compile_with_env.bat
+```
+
+这将使用以下命名规则的环境进行编译：
+- comfyui_encrypted_kaliey_py310
+- comfyui_encrypted_kaliey_py311
+- comfyui_encrypted_kaliey_py312
+- comfyui_encrypted_kaliey_py313
+
+### 自定义Anaconda路径
+
+如果您的Anaconda安装在非默认位置，可以设置环境变量：
+
+```batch
+set ANACONDA_PATH=C:\Your\Anaconda\Path
+.\build.bat
 ```
 
 ## ⚠️ 注意事项
